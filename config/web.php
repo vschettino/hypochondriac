@@ -6,10 +6,12 @@ $config = [
     'id' => 'basic',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
+    'language' => 'pt-BR',
+    'sourceLanguage' => 'pt_BR',
     'components' => [
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
-            'cookieValidationKey' => '',
+            'cookieValidationKey' => 'bdgsddshfdbvga=-s14tds53tewu754edfv',
         ],
         'cache' => [
             'class' => 'yii\caching\FileCache',
@@ -28,6 +30,17 @@ $config = [
             // for the mailer to send real emails.
             'useFileTransport' => true,
         ],
+        'i18n' => [
+            'translations' => [
+                'yii' => [
+                    'class' => 'yii\i18n\PhpMessageSource',
+                    'basePath' => "@vendor/yiisoft/yii2/messages",
+                    'fileMap' => [
+                        'yii' => 'yii.php',
+                    ]
+                ]
+            ]
+        ],
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,
             'targets' => [
@@ -38,12 +51,15 @@ $config = [
             ],
         ],
         'db' => require(__DIR__ . '/db.php'),
+        'formatter' => [
+            'class' => 'yii\i18n\Formatter',
+            'booleanFormat' => ['Não', 'Sim'],
+        ]
     ],
     'params' => $params,
 ];
 
 if (YII_ENV_DEV) {
-    // configuration adjustments for 'dev' environment
     $config['bootstrap'][] = 'debug';
     $config['modules']['debug'] = 'yii\debug\Module';
 

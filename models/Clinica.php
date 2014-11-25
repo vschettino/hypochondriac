@@ -35,7 +35,7 @@ class Clinica extends \yii\db\ActiveRecord
             [['analise_clinica'], 'integer'],
             [['nome'], 'string', 'max' => 100],
             [['telefone'], 'string', 'max' => 20],
-            [['email'], 'email', 'max' => 255]
+            [['email'], 'email',]
         ];
     }
 

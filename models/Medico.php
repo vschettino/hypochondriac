@@ -38,7 +38,7 @@ class Medico extends \yii\db\ActiveRecord
             [['nome'], 'string', 'max' => 100],
             [['cpf'], 'string', 'max' => 11],
             [['telefone'], 'string', 'max' => 20],
-            [['email', 'crm'], 'string', 'max' => 255],
+            [['email', 'crm'], 'string',],
             [['email'], 'email']
         ];
     }

@@ -15,6 +15,8 @@ use Yii;
  * @property string $crm
  * @property integer $clinica_id
  *
+ *
+ *
  * @property Clinica $clinica
  */
 class Medico extends \yii\db\ActiveRecord

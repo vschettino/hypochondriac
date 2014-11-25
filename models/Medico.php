@@ -17,6 +17,8 @@ use Yii;
  *
  *
  *
+ *
+ *
  * @property Clinica $clinica
  */
 class Medico extends \yii\db\ActiveRecord

@@ -11,7 +11,7 @@ $config = [
     'components' => [
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
-            'cookieValidationKey' => 'bdgsddshfdbvga=-s14tds53tewu754edfv',
+            'cookieValidationKey' => 'bdgsddshfdbvgas14tds53tewu754edfv',
         ],
         'cache' => [
             'class' => 'yii\caching\FileCache',
@@ -54,6 +54,9 @@ $config = [
         'formatter' => [
             'class' => 'yii\i18n\Formatter',
             'booleanFormat' => ['Não', 'Sim'],
+            'dateFormat' => 'php:d/m/Y',
+            'datetimeFormat' => 'php:d/M/Y H:i',
+            'timeFormat' => 'php:H:i',
         ]
     ],
     'params' => $params,

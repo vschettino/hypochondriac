@@ -9,7 +9,6 @@ use Yii;
  *
  * @property integer $id
  * @property string $data
- * @property string $data_fim
  * @property double $preco
  * @property string $descricao
  * @property integer $medico_id
@@ -18,6 +17,7 @@ use Yii;
  */
 class Consulta extends \yii\db\ActiveRecord
 {
+
     /**
      * @inheritdoc
      */
@@ -33,7 +33,7 @@ class Consulta extends \yii\db\ActiveRecord
     {
         return [
             [['data', 'medico_id'], 'required'],
-            [['data', 'data_fim'], 'safe'],
+            [['data', 'hora'], 'safe'],
             [['preco'], 'number'],
             [['medico_id'], 'integer'],
             [['descricao'], 'string', 'max' => 255]
@@ -48,10 +48,10 @@ class Consulta extends \yii\db\ActiveRecord
         return [
             'id' => 'ID',
             'data' => 'Data',
-            'data_fim' => 'Data Fim',
+            'hora' => 'Hora',
             'preco' => 'Preco',
-            'descricao' => 'Descricao',
-            'medico_id' => 'Medico ID',
+            'descricao' => 'Descrição',
+            'medico_id' => 'Médico',
         ];
     }
 

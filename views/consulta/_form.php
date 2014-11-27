@@ -1,6 +1,7 @@
 <?php
 
 use yii\helpers\Html;
+use yii\helpers\ArrayHelper;
 use yii\widgets\ActiveForm;
 use yii\jui\DatePicker;
 
@@ -12,19 +13,19 @@ use yii\jui\DatePicker;
 <div class="consulta-form">
 
     <?php $form = ActiveForm::begin(); ?>
-    <div id="" class="input-append date-time">
-                    <input data-format="dd/MM/yyyy hh:mm:ss" type="text"/>
-    <span class="add-on">
-      <i data-time-icon="icon-time" data-date-icon="icon-calendar"></i>
-    </span>
-    </div>
-    <?= $form->field($model, 'data_fim')->textInput() ?>
+
+
+    <?= $form->field($model, 'data')->input('date') ?>
+    <?= $form->field($model, 'hora')->input('time') ?>
+
 
     <?= $form->field($model, 'preco')->textInput() ?>
 
-    <?= $form->field($model, 'descricao')->textInput(['maxlength' => 255]) ?>
+    <?= $form->field($model, 'descricao')->textarea(['maxlength' => 255]) ?>
 
-    <?= $form->field($model, 'medico_id')->textInput() ?>
+    <?= $form->field($model, 'medico_id')->dropDownList(
+        ArrayHelper::map(\app\models\Medico::find()->all(), 'id', 'nome')
+    ); ?>
 
     <div class="form-group">
         <?= Html::submitButton(

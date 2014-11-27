@@ -49,13 +49,13 @@ class ReceitaRemedio extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'medico_id' => 'Medico ID',
-            'obs' => 'Obs',
-            'remedio_id' => 'Remedio ID',
+            'medico_id' => 'Médico',
+            'obs' => 'Observação',
+            'remedio_id' => 'Remérdio',
             'dose' => 'Dose',
-            'horario' => 'Horario',
-            'vezes' => 'Vezes',
-            'dt_recomendacao' => 'Dt Recomendacao',
+            'horario' => 'Horário',
+            'vezes' => 'N° de Vezes',
+            'dt_recomendacao' => 'Data de Recomendação',
         ];
     }
 

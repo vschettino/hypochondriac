@@ -35,7 +35,7 @@ class DbTarget extends Target
      * The table should be pre-created as follows:
      *
      * ~~~
-     * CREATE TABLE log (
+     * create TABLE log (
      *     id       BIGINT NOT NULL AUTO_INCREMENT PRIMARY KEY,
      *     level    INTEGER,
      *     category VARCHAR(255),

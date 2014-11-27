@@ -60,11 +60,11 @@ class ClinicaController extends Controller
     }
 
     /**
-     * Creates a new Clinica model.
+     * creates a new Clinica model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
-    public function actionCreate()
+    public function actioncreate()
     {
         $model = new Clinica();
 

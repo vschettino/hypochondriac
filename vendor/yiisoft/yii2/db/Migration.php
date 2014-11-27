@@ -162,7 +162,7 @@ class Migration extends Component implements MigrationInterface
     }
 
     /**
-     * Creates and executes an INSERT SQL statement.
+     * creates and executes an INSERT SQL statement.
      * The method will properly escape the column names, and bind the values to be inserted.
      * @param string $table the table that new rows will be inserted into.
      * @param array $columns the column data (name => value) to be inserted into the table.
@@ -176,7 +176,7 @@ class Migration extends Component implements MigrationInterface
     }
 
     /**
-     * Creates and executes an batch INSERT SQL statement.
+     * creates and executes an batch INSERT SQL statement.
      * The method will properly escape the column names, and bind the values to be inserted.
      * @param string $table the table that new rows will be inserted into.
      * @param array $columns the column names.
@@ -191,7 +191,7 @@ class Migration extends Component implements MigrationInterface
     }
 
     /**
-     * Creates and executes an UPDATE SQL statement.
+     * creates and executes an UPDATE SQL statement.
      * The method will properly escape the column names and bind the values to be updated.
      * @param string $table the table to be updated.
      * @param array $columns the column data (name => value) to be updated.
@@ -208,7 +208,7 @@ class Migration extends Component implements MigrationInterface
     }
 
     /**
-     * Creates and executes a DELETE SQL statement.
+     * creates and executes a DELETE SQL statement.
      * @param string $table the table where the data will be deleted from.
      * @param array|string $condition the conditions that will be put in the WHERE part. Please
      * refer to [[Query::where()]] on how to specify conditions.

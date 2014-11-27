@@ -394,7 +394,7 @@ class Command extends Component
     }
 
     /**
-     * Creates an INSERT command.
+     * creates an INSERT command.
      * For example,
      *
      * ~~~
@@ -421,7 +421,7 @@ class Command extends Component
     }
 
     /**
-     * Creates a batch INSERT command.
+     * creates a batch INSERT command.
      * For example,
      *
      * ~~~
@@ -447,7 +447,7 @@ class Command extends Component
     }
 
     /**
-     * Creates an UPDATE command.
+     * creates an UPDATE command.
      * For example,
      *
      * ~~~
@@ -473,7 +473,7 @@ class Command extends Component
     }
 
     /**
-     * Creates a DELETE command.
+     * creates a DELETE command.
      * For example,
      *
      * ~~~
@@ -498,7 +498,7 @@ class Command extends Component
     }
 
     /**
-     * Creates a SQL command for creating a new DB table.
+     * creates a SQL command for creating a new DB table.
      *
      * The columns in the new table should be specified as name-definition pairs (e.g. 'name' => 'string'),
      * where name stands for a column name which will be properly quoted by the method, and definition
@@ -523,7 +523,7 @@ class Command extends Component
     }
 
     /**
-     * Creates a SQL command for renaming a DB table.
+     * creates a SQL command for renaming a DB table.
      * @param string $table the table to be renamed. The name will be properly quoted by the method.
      * @param string $newName the new table name. The name will be properly quoted by the method.
      * @return Command the command object itself
@@ -536,7 +536,7 @@ class Command extends Component
     }
 
     /**
-     * Creates a SQL command for dropping a DB table.
+     * creates a SQL command for dropping a DB table.
      * @param string $table the table to be dropped. The name will be properly quoted by the method.
      * @return Command the command object itself
      */
@@ -548,7 +548,7 @@ class Command extends Component
     }
 
     /**
-     * Creates a SQL command for truncating a DB table.
+     * creates a SQL command for truncating a DB table.
      * @param string $table the table to be truncated. The name will be properly quoted by the method.
      * @return Command the command object itself
      */
@@ -560,7 +560,7 @@ class Command extends Component
     }
 
     /**
-     * Creates a SQL command for adding a new DB column.
+     * creates a SQL command for adding a new DB column.
      * @param string $table the table that the new column will be added to. The table name will be properly quoted by the method.
      * @param string $column the name of the new column. The name will be properly quoted by the method.
      * @param string $type the column type. [[\yii\db\QueryBuilder::getColumnType()]] will be called
@@ -576,7 +576,7 @@ class Command extends Component
     }
 
     /**
-     * Creates a SQL command for dropping a DB column.
+     * creates a SQL command for dropping a DB column.
      * @param string $table the table whose column is to be dropped. The name will be properly quoted by the method.
      * @param string $column the name of the column to be dropped. The name will be properly quoted by the method.
      * @return Command the command object itself
@@ -589,7 +589,7 @@ class Command extends Component
     }
 
     /**
-     * Creates a SQL command for renaming a column.
+     * creates a SQL command for renaming a column.
      * @param string $table the table whose column is to be renamed. The name will be properly quoted by the method.
      * @param string $oldName the old name of the column. The name will be properly quoted by the method.
      * @param string $newName the new name of the column. The name will be properly quoted by the method.
@@ -603,7 +603,7 @@ class Command extends Component
     }
 
     /**
-     * Creates a SQL command for changing the definition of a column.
+     * creates a SQL command for changing the definition of a column.
      * @param string $table the table whose column is to be changed. The table name will be properly quoted by the method.
      * @param string $column the name of the column to be changed. The name will be properly quoted by the method.
      * @param string $type the column type. [[\yii\db\QueryBuilder::getColumnType()]] will be called
@@ -619,7 +619,7 @@ class Command extends Component
     }
 
     /**
-     * Creates a SQL command for adding a primary key constraint to an existing table.
+     * creates a SQL command for adding a primary key constraint to an existing table.
      * The method will properly quote the table and column names.
      * @param string $name the name of the primary key constraint.
      * @param string $table the table that the primary key constraint will be added to.
@@ -634,7 +634,7 @@ class Command extends Component
     }
 
     /**
-     * Creates a SQL command for removing a primary key constraint to an existing table.
+     * creates a SQL command for removing a primary key constraint to an existing table.
      * @param string $name the name of the primary key constraint to be removed.
      * @param string $table the table that the primary key constraint will be removed from.
      * @return Command the command object itself
@@ -647,7 +647,7 @@ class Command extends Component
     }
 
     /**
-     * Creates a SQL command for adding a foreign key constraint to an existing table.
+     * creates a SQL command for adding a foreign key constraint to an existing table.
      * The method will properly quote the table and column names.
      * @param string $name the name of the foreign key constraint.
      * @param string $table the table that the foreign key constraint will be added to.
@@ -666,7 +666,7 @@ class Command extends Component
     }
 
     /**
-     * Creates a SQL command for dropping a foreign key constraint.
+     * creates a SQL command for dropping a foreign key constraint.
      * @param string $name the name of the foreign key constraint to be dropped. The name will be properly quoted by the method.
      * @param string $table the table whose foreign is to be dropped. The name will be properly quoted by the method.
      * @return Command the command object itself
@@ -679,7 +679,7 @@ class Command extends Component
     }
 
     /**
-     * Creates a SQL command for creating a new index.
+     * creates a SQL command for creating a new index.
      * @param string $name the name of the index. The name will be properly quoted by the method.
      * @param string $table the table that the new index will be created for. The table name will be properly quoted by the method.
      * @param string|array $columns the column(s) that should be included in the index. If there are multiple columns, please separate them
@@ -695,7 +695,7 @@ class Command extends Component
     }
 
     /**
-     * Creates a SQL command for dropping an index.
+     * creates a SQL command for dropping an index.
      * @param string $name the name of the index to be dropped. The name will be properly quoted by the method.
      * @param string $table the table whose index is to be dropped. The name will be properly quoted by the method.
      * @return Command the command object itself
@@ -708,7 +708,7 @@ class Command extends Component
     }
 
     /**
-     * Creates a SQL command for resetting the sequence value of a table's primary key.
+     * creates a SQL command for resetting the sequence value of a table's primary key.
      * The sequence will be reset such that the primary key of the next new row inserted
      * will have the specified value or 1.
      * @param string $table the name of the table whose primary key sequence will be reset

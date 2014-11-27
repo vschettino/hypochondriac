@@ -109,7 +109,7 @@ jQuery.ajaxTransport(function( options ) {
 				xhr.onload = callback();
 				xhr.onerror = callback("error");
 
-				// Create the abort callback
+                // create the abort callback
 				callback = xhrCallbacks[ id ] = callback("abort");
 
 				try {

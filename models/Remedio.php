@@ -30,8 +30,6 @@ class Remedio extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['id', 'nome'], 'required'],
-            [['id'], 'integer'],
             [['preco'], 'number'],
             [['nome', 'descricao'], 'string', 'max' => 255]
         ];

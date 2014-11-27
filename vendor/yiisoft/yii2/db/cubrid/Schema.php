@@ -104,7 +104,7 @@ class Schema extends \yii\db\Schema
     }
 
     /**
-     * Creates a query builder for the CUBRID database.
+     * creates a query builder for the CUBRID database.
      * @return QueryBuilder query builder instance
      */
     public function createQueryBuilder()

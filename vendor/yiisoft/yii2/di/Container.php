@@ -340,7 +340,7 @@ class Container extends Component
     }
 
     /**
-     * Creates an instance of the specified class.
+     * creates an instance of the specified class.
      * This method will resolve dependencies of the specified class, instantiate them, and inject
      * them into the new instance of the specified class.
      * @param string $class the class name

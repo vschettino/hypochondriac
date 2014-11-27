@@ -267,7 +267,7 @@ class HTML5
 
                 } elseif(preg_match('/^[A-Za-z]$/', $char)) {
                     /* U+0041 LATIN LETTER A through to U+005A LATIN LETTER Z
-                    Create a new start tag token, set its tag name to the lowercase
+                    create a new start tag token, set its tag name to the lowercase
                     version of the input character (add 0x0020 to the character's code
                     point), then switch to the tag name state. (Don't emit the token
                     yet; further details will be filled in before it is emitted.) */
@@ -350,7 +350,7 @@ class HTML5
 
             if(preg_match('/^[A-Za-z]$/', $char)) {
                 /* U+0041 LATIN LETTER A through to U+005A LATIN LETTER Z
-                Create a new end tag token, set its tag name to the lowercase version
+                create a new end tag token, set its tag name to the lowercase version
                 of the input character (add 0x0020 to the character's code point), then
                 switch to the tag name state. (Don't emit the token yet; further details
                 will be filled in before it is emitted.) */
@@ -1302,7 +1302,7 @@ class HTML5TreeConstructer
         $token['type'] === HTML5::STARTTAG ||
         $token['type'] === HTML5::ENDTAG ||
         $token['type'] === HTML5::EOF) {
-            /* Create an HTMLElement node with the tag name html, in the HTML
+            /* create an HTMLElement node with the tag name html, in the HTML
             namespace. Append it to the Document object. Switch to the main
             phase and reprocess the current token. */
             $html = $this->dom->createElement('html');
@@ -1385,7 +1385,7 @@ class HTML5TreeConstructer
 
         /* A start tag token with the tag name "head" */
         } elseif($token['type'] === HTML5::STARTTAG && $token['name'] === 'head') {
-            /* Create an element for the token, append the new element to the
+            /* create an element for the token, append the new element to the
             current node and push it onto the stack of open elements. */
             $element = $this->insertElement($token);
 
@@ -1451,7 +1451,7 @@ class HTML5TreeConstructer
 
         /* A start tag with the tag name "title" */
         } elseif($token['type'] === HTML5::STARTTAG && $token['name'] === 'title') {
-            /* Create an element for the token and append the new element to the
+            /* create an element for the token and append the new element to the
             node pointed to by the head element pointer, or, if that is null
             (innerHTML case), to the current node. */
             if($this->head_pointer !== null) {
@@ -1467,7 +1467,7 @@ class HTML5TreeConstructer
 
         /* A start tag with the tag name "style" */
         } elseif($token['type'] === HTML5::STARTTAG && $token['name'] === 'style') {
-            /* Create an element for the token and append the new element to the
+            /* create an element for the token and append the new element to the
             node pointed to by the head element pointer, or, if that is null
             (innerHTML case), to the current node. */
             if($this->head_pointer !== null) {
@@ -1483,7 +1483,7 @@ class HTML5TreeConstructer
 
         /* A start tag with the tag name "script" */
         } elseif($token['type'] === HTML5::STARTTAG && $token['name'] === 'script') {
-            /* Create an element for the token. */
+            /* create an element for the token. */
             $element = $this->insertElement($token, false);
             $this->head_pointer->appendChild($element);
 
@@ -1493,7 +1493,7 @@ class HTML5TreeConstructer
         /* A start tag with the tag name "base", "link", or "meta" */
         } elseif($token['type'] === HTML5::STARTTAG && in_array($token['name'],
         array('base', 'link', 'meta'))) {
-            /* Create an element for the token and append the new element to the
+            /* create an element for the token and append the new element to the
             node pointed to by the head element pointer, or, if that is null
             (innerHTML case), to the current node. */
             if($this->head_pointer !== null) {

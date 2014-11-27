@@ -34,13 +34,13 @@ $this->params['breadcrumbs'][] = $this->title;
             'model' => $model,
             'attributes' => [
                 'id',
-                'medico_id',
+                'medico.nome',
                 'obs',
-                'remedio_id',
+                'remedio.nome',
                 'dose',
-                'horario',
+                'horario:time',
                 'vezes',
-                'dt_recomendacao',
+                'dt_recomendacao:date',
             ],
         ]
     ) ?>

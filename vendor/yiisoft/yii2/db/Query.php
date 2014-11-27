@@ -109,7 +109,7 @@ class Query extends Component implements QueryInterface
 
 
     /**
-     * Creates a DB command that can be used to execute this query.
+     * creates a DB command that can be used to execute this query.
      * @param Connection $db the database connection used to generate the SQL statement.
      * If this parameter is not given, the `db` application component will be used.
      * @return Command the created DB command instance.
@@ -775,7 +775,7 @@ class Query extends Component implements QueryInterface
     }
 
     /**
-     * Creates a new Query object and copies its property values from an existing one.
+     * creates a new Query object and copies its property values from an existing one.
      * The properties being copies are the ones to be used by query builders.
      * @param Query $from the source query object
      * @return Query the new Query object

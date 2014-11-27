@@ -208,7 +208,7 @@ abstract class BaseActiveRecord extends Model implements ActiveRecordInterface
      *
      * To use Optimistic locking:
      *
-     * 1. Create a column to store the version number of each row. The column type should be `BIGINT DEFAULT 0`.
+     * 1. create a column to store the version number of each row. The column type should be `BIGINT DEFAULT 0`.
      *    Override this method to return the name of this column.
      * 2. In the Web form that collects the user input, add a hidden field that stores
      *    the lock version of the recording being updated.
@@ -1056,7 +1056,7 @@ abstract class BaseActiveRecord extends Model implements ActiveRecordInterface
     }
 
     /**
-     * Creates an active record instance.
+     * creates an active record instance.
      *
      * This method is called together with [[populateRecord()]] by [[ActiveQuery]].
      * It is not meant to be used for creating new records directly.

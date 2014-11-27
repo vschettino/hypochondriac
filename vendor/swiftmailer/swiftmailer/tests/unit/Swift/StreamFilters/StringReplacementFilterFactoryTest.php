@@ -2,7 +2,7 @@
 
 class Swift_StreamFilters_StringReplacementFilterFactoryTest extends \PHPUnit_Framework_TestCase
 {
-    public function testInstancesOfStringReplacementFilterAreCreated()
+    public function testInstancesOfStringReplacementFilterArecreated()
     {
         $factory = $this->_createFactory();
         $this->assertInstanceof(

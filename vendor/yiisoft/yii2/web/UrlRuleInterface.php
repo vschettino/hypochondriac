@@ -24,7 +24,7 @@ interface UrlRuleInterface
      */
     public function parseRequest($manager, $request);
     /**
-     * Creates a URL according to the given route and parameters.
+     * creates a URL according to the given route and parameters.
      * @param UrlManager $manager the URL manager
      * @param string $route the route. It should not have slashes at the beginning or the end.
      * @param array $params the parameters

@@ -214,7 +214,7 @@ return [
   'yii\rest\Action' => YII2_PATH . '/rest/Action.php',
   'yii\rest\ActiveController' => YII2_PATH . '/rest/ActiveController.php',
   'yii\rest\Controller' => YII2_PATH . '/rest/Controller.php',
-  'yii\rest\CreateAction' => YII2_PATH . '/rest/CreateAction.php',
+    'yii\rest\createAction' => YII2_PATH . '/rest/createAction.php',
   'yii\rest\DeleteAction' => YII2_PATH . '/rest/DeleteAction.php',
   'yii\rest\IndexAction' => YII2_PATH . '/rest/IndexAction.php',
   'yii\rest\OptionsAction' => YII2_PATH . '/rest/OptionsAction.php',

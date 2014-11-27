@@ -60,11 +60,11 @@ class MedicoController extends Controller
     }
 
     /**
-     * Creates a new Medico model.
+     * creates a new Medico model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
-    public function actionCreate()
+    public function actioncreate()
     {
         $model = new Medico();
 

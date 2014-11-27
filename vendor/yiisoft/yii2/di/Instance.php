@@ -68,7 +68,7 @@ class Instance
     }
 
     /**
-     * Creates a new Instance object.
+     * creates a new Instance object.
      * @param string $id the component ID
      * @return Instance the new Instance object.
      */

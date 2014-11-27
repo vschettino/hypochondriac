@@ -19,7 +19,7 @@ class ConsultaSearch extends Consulta
     {
         return [
             [['id', 'medico_id'], 'integer'],
-            [['data', 'data_fim', 'descricao'], 'safe'],
+            [['data', 'hora', 'descricao'], 'safe'],
             [['preco'], 'number'],
         ];
     }
@@ -58,7 +58,7 @@ class ConsultaSearch extends Consulta
             [
                 'id' => $this->id,
                 'data' => $this->data,
-                'data_fim' => $this->data_fim,
+                'hora' => $this->hora,
                 'preco' => $this->preco,
                 'medico_id' => $this->medico_id,
             ]

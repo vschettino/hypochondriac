@@ -109,7 +109,7 @@ class Schema extends \yii\db\Schema
 
 
     /**
-     * Creates a query builder for the PostgreSQL database.
+     * creates a query builder for the PostgreSQL database.
      * @return QueryBuilder query builder instance
      */
     public function createQueryBuilder()

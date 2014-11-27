@@ -2,7 +2,7 @@
 
 class Swift_Transport_StreamBufferTest extends \PHPUnit_Framework_TestCase
 {
-    public function testSettingWriteTranslationsCreatesFilters()
+    public function testSettingWriteTranslationscreatesFilters()
     {
         $factory = $this->_createFactory();
         $factory->expects($this->once())

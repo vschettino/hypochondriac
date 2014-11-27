@@ -1322,7 +1322,7 @@ class Request extends \yii\base\Request
     }
 
     /**
-     * Creates a cookie with a randomly generated CSRF token.
+     * creates a cookie with a randomly generated CSRF token.
      * Initial values specified in [[csrfCookie]] will be applied to the generated cookie.
      * @return Cookie the generated cookie
      * @see enableCsrfValidation

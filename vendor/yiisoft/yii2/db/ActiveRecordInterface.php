@@ -94,7 +94,7 @@ interface ActiveRecordInterface
     public static function isPrimaryKey($keys);
 
     /**
-     * Creates an [[ActiveQueryInterface|ActiveQuery]] instance for query purpose.
+     * creates an [[ActiveQueryInterface|ActiveQuery]] instance for query purpose.
      *
      * The returned [[ActiveQueryInterface|ActiveQuery]] instance can be further customized by calling
      * methods defined in [[ActiveQueryInterface]] before `one()` or `all()` is called to return

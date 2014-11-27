@@ -2,6 +2,7 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
+use yii\jui\DatePicker;
 
 /* @var $this yii\web\View */
 /* @var $model app\models\Consulta */
@@ -11,9 +12,12 @@ use yii\widgets\ActiveForm;
 <div class="consulta-form">
 
     <?php $form = ActiveForm::begin(); ?>
-
-    <?= $form->field($model, 'data')->textInput() ?>
-
+    <div id="" class="input-append date-time">
+                    <input data-format="dd/MM/yyyy hh:mm:ss" type="text"/>
+    <span class="add-on">
+      <i data-time-icon="icon-time" data-date-icon="icon-calendar"></i>
+    </span>
+    </div>
     <?= $form->field($model, 'data_fim')->textInput() ?>
 
     <?= $form->field($model, 'preco')->textInput() ?>

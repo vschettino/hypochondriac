@@ -42,9 +42,24 @@ AppAsset::register($this);
             'items' => [
                 ['label' => 'Home', 'url' => ['/site/index']],
                 ['label' => 'Sobre', 'url' => ['/site/about']],
+                ['label' => 'Consultas', 'url' => ['/consulta/index']],
+                [
+                    'label' => 'Remédios',
+                    'items' =>
+                        [
+                            [
+                                'label' => 'Cadastrar +',
+                                'url' => ['/remedio/']
+                            ],
+                            [
+                                'label' => 'Receitas',
+                                'url' => ['/receita-remedio/']
+                            ]
+                        ],
+                    ['label' => 'Contato', 'url' => ['/site/contact']]
+                ],
                 [
                     'label' => 'Cadastros',
-                    'url' => ['/site/about'],
                     'items' =>
                         [
                             [
@@ -84,4 +99,11 @@ AppAsset::register($this);
 <?php $this->endBody() ?>
 </body>
 </html>
+<script>
+    $(function () {
+        $('.date-time').datetimepicker({
+            language: 'pt-BR'
+        });
+    });
+</script>
 <?php $this->endPage() ?>
